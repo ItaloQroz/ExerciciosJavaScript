@@ -16,9 +16,7 @@ function ValorMaior() {
     else if (numero3 >= numero2 && numero3>=numero1){
         maior1 = numero3;
     }
-    else{}
-
-    if (numero1 >= numero2 && numero1 <= numero3){
+    else if (numero1 >= numero2 && numero1 <= numero3){
         maior2 = numero1;
     }
     else if (numero1 <= numero2 && numero1 >= numero3){
