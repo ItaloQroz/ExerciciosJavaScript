@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/JavaScript" src="imc.js"></script>
-    <script src="Aposentadoria.js"></script>
+    <script type="text/JavaScript" src="Aposentadoria.js"></script>
     <script src="ParOuImpar.js"></script>
     <script src="ValorMaior.js"></script>
     <script src="TABUADA.js"></script>
     <script src="MédiaAritmetica.js"></script>
+    <script src="Temperatura.js"></script>
+    <script src="Gasolina.js"></script>
     <title>Exercicios JavaScript</title>
 </head>
 <body>
@@ -36,6 +38,47 @@
     <h1>Botão MédiaAritmética</h1>
 
     <button value="media" onclick="media();">Média Aritmética</button>
+
+    <h1>Botão Celcius para Fahreheit</h1>
+    <fieldset>
+    <legend>Conversão de Temperatura</legend>
+    <label for="Centigrados">Centigrados: </label>
+    <br>
+    <input type="number" id="Centigrados" onkeyup="ConverterTemp();" onchange="ConverterTemp()">
+    <br>
+    <label for="Fahrenheit" id="">Fahrenheit: </label>
+    <br>
+    <input  type="Number" id="Fahrenheit">
+    <br>
+    <br>
+    <input  type="button" value="Converter" id="Fahrenheit" onclick="ConverterTemp()">    
+    </fieldset>
+
+        <h1>Gasolina</h1>
+
+        <fieldset>
+        <label for="TempGasto">Tempo Gasto: </label>
+        <br>
+        <input type="number" id="TempGasto">
+        <br>
+        <label for="VeloMedia">Velocidade Média</label>
+        <br>
+        <input  type="Number" id="VeloMedia">
+        <br>
+        <label for="Distancia">Distancia</label>
+        <br>
+        <input  type="text" id="Distancia" onkeyup="CalculosLitros();"> 
+        <br>
+        <label for="Litros">Litros</label>
+        <br>
+        <input type="text" id="Litros" onkeyup="CalculosLitros();">
+
+        
+        
+        </fieldset>
+    
+    
+
 
 </body>
 </html>
